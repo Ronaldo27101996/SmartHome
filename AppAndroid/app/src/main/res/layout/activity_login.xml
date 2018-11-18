@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context="com.xuanhuong.controllight.LoginActivity">
+    <LinearLayout
+
+        android:background="#000"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:id="@+id/linearWrapper"
+            android:layout_width="wrap_content"
+            android:orientation="vertical"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+
+            <ImageView
+                android:id="@+id/imgLogo"
+                android:layout_marginBottom="20dp"
+                android:layout_width="350px"
+                android:layout_height="350px"
+                app:srcCompat="@drawable/logodark" />
+
+            <EditText
+                android:id="@+id/txtId"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:background="#f7eca5"
+                android:padding="10dp"
+                android:ems="10"
+                android:maxLength="30"
+                android:drawableStart="@drawable/icon_miniuser"
+                android:drawablePadding="15dp"
+                android:textSize="35px"
+                android:hint="Email"
+                android:text="xxx@gmail.com"
+                android:inputType="textPersonName" />
+
+            <EditText
+                android:id="@+id/txtPass"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:background="#f7eca5"
+                android:drawablePadding="15dp"
+                android:layout_marginBottom="10dp"
+                android:drawableStart="@drawable/icon_pass"
+                android:textSize="35px"
+                android:padding="10dp"
+                android:ems="10"
+                android:maxLength="20"
+                android:text="123456"
+                android:hint="Password"
+                android:inputType="textPassword" />
+
+            <CheckBox
+                android:id="@+id/ckbRemember"
+                android:textSize="25px"
+                android:layout_marginTop="10px"
+                android:layout_gravity="start"
+                android:buttonTint="#b9b744"
+                android:textColor="#eadec8"
+                android:layout_width="wrap_content"
+                android:layout_height="60px"
+                android:text="Remember" />
+
+            <Button
+                android:id="@+id/btnLogin"
+                android:layout_width="320dp"
+                android:layout_height="100px"
+                android:background="#d4b31e"
+                android:textSize="30px"
+                android:layout_marginTop="50px"
+                android:text="Login" />
+
+            <TextView
+                android:id="@+id/txtSignUp"
+                android:layout_width="110px"
+                android:layout_height="50px"
+                android:layout_gravity="end"
+                android:textStyle="italic"
+                android:textSize="30px"
+                android:textColor="#75fafbff"
+                android:layout_marginEnd="60px"
+                android:layout_marginTop="40px"
+                android:text="Sign Up" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>
